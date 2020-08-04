@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&family=Roboto+Slab:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+h1{
+    font-family: 'Raleway', sans-serif;
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+p{
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+.paragh{
+    font-family: 'Roboto Slab', serif;
+    text-align: justify;
+}
+.v-header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.fullscreen-video-wrap video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: gray;
+    z-index: 1;
+    opacity: 0.35;
+}
+
+.header-content {
+    z-index: 2;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: 2rem;
+}
+
+
+.btn {
+    position: absolute;
+    top: 70%;
+    right: 45%;
+    --background: #5628EE;
+    --shadow: rgba(84, 40, 238, 0.16);
+    font-family: 'Raleway', sans-serif;
+    --y: 0;
+    display: table;
+    text-align: center;
+    padding: 12px 24px;
+    border-radius: 4px;
+    color: #fff;
+    background: var(--background);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    backface-visibility: hidden;
+    box-shadow: 0 4px 12px var(--shadow);
+    transform: translateY(var(--y));
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    align-items: center;
+  }
+
+  .btn:hover {
+    --y: -2px;
+    box-shadow: 0 8px 16px var(--shadow);
+  }
+  .btn:active {
+    --y: 1px;
+    box-shadow: 0 4px 8px var(--shadow);
+  }
